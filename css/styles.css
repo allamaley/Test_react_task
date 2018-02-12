@@ -9,7 +9,6 @@ body {
 
 /* Style the header */
 header {
-    background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -18,11 +17,24 @@ header {
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
-    width: 33.33%;
+    width: 20%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
+    position: relative;
 }
-
+.column-1 {
+    width: 80%;
+}
+.column i,.column header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.column i a{
+  cursor: pointer;
+}
 /* Clear floats after the columns */
 section:after {
     content: "";
