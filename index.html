@@ -19,37 +19,32 @@
 
   <!--My js code-->
   <script src="js/myscript.js"></script>
+  <!--React js code-->
+  <script src="js/app.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#nav">
+<body>
+  <div id='root'></div>
   <header>
     <h2>Have a look at our solutions</h2>
   </header>
 
-  <section>
-    <div class="column column-1" style="background-color:#aaa;">
-      <header>
-        <h1>Copmany1</h1>
-      </header>
-    </div>
-    <div class="column" style="background-color:#ccc;">
-      <a href="">
-        <i class="fa fa-plus"></i>
-      </a>
-    </div>
-  </section>
-  <section>
-    <div class="column column-1" style="background-color:#aaa;">
-      <header>
-        <h1>Copmany2</h1>
-      </header>
-    </div>
-    <div class="column" style="background-color:#ccc;">
-        <a href="#">
-          <i class="fa fa-plus"></i>
-        </a>
-    </div>
-  </section>
+<section>
+  <button class="accordion">
+    <header>Company 1</header>
+  </button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+</section>
+<section>
+  <button class="accordion">
+    <header>Company 2</header>
+  </button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+</section>
   <footer>
     <i class="fa fa-angle-up fa-bounce fa-2x" aria-hidden="true"></i>
     </a>
